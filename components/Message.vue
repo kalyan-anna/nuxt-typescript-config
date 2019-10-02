@@ -1,8 +1,5 @@
 <template>
-  <div>
-    Name: {{ fullName }}
-    Message: {{ message }}
-  </div>
+  <div>Hello...</div>
 </template>
 
 <script lang="ts">
@@ -13,7 +10,7 @@ interface User {
   lastName: number;
 }
 
-@Component
+@Component({})
 export default class Message extends Vue {
   message: string = "This is a message";
 

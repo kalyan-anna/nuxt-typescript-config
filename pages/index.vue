@@ -4,14 +4,16 @@
   </div>
 </template>
 
-<script>
-import Logo from "~/components/Logo.vue";
+<script lang="ts">
+import { Component, Vue } from "nuxt-property-decorator";
+import Message from "~/components/Message.vue";
 
-export default {
+@Component({
   components: {
-    Logo
+    Message
   }
-};
+})
+export default class extends Vue {}
 </script>
 
 <style>
